@@ -2,9 +2,10 @@ include!(concat!(env!("OUT_DIR"), "/num_voters.rs"));
 
 use merkle_light::{hash::Algorithm, merkle::MerkleTree, proof::Proof};
 use serde::{Deserialize, Serialize};
-use sha3::Digest;
+use tiny_keccak::{Hasher, Sha3};
 use std::clone::Clone;
 use std::ops::BitOr;
+
 
 use hashsig::inc_encoding::basic_winternitz::WinternitzEncoding;
 use hashsig::signature::generalized_xmss::{
@@ -121,10 +122,12 @@ pub trait PublicKeyHasher {
 
 impl PublicKeyHasher for PublicKey {
     fn hash_256(&self) -> [u8; 32] {
-        let mut hasher = sha3::Sha3_256::new();
+        let mut hasher = Sha3::v256();
         hasher.update(&self.root);
         hasher.update(&self.parameter);
-        hasher.finalize().into()
+        let mut result = [0u8; 32];
+        hasher.finalize(&mut result);
+        result.into()
     }
 }
 
@@ -158,15 +161,15 @@ impl BitOr for Bitfield {
 
 // This is a custom hash algorithm for the Merkle tree
 // It uses SHA3-256 as the underlying hash function
-use sha3::Sha3_256;
-use std::hash::Hasher;
+// use sha3::Sha3_256;
+use std::hash::Hasher as stdHasherTrait;
 
-#[derive(Clone, Debug)]
-pub struct Alg(Sha3_256);
+#[derive(Clone)]
+pub struct Alg(Sha3);
 
 impl Alg {
     pub fn new() -> Alg {
-        Alg(Sha3_256::new())
+        Alg(Sha3::v256())
     }
 }
 
@@ -176,7 +179,7 @@ impl Default for Alg {
     }
 }
 
-impl Hasher for Alg {
+impl stdHasherTrait for Alg {
     #[inline]
     fn write(&mut self, msg: &[u8]) {
         self.0.update(msg);
@@ -194,11 +197,15 @@ impl Algorithm<[u8; 32]> for Alg {
         // let mut h = [0u8; 32];
         // self.0.result(&mut h);
         // h
-        self.0.clone().finalize().into()
+        let mut result = [0u8; 32];
+        self.0.clone().finalize(&mut result);
+        result.into()
+        // self.0.clone().finalize().into()
     }
 
     #[inline]
     fn reset(&mut self) {
-        self.0.reset();
+        self.0 = Sha3::v256();
+        // self.0.reset();
     }
 }

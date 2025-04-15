@@ -16,3 +16,50 @@ Proof size: 0 bytes
 Bitfield: 0b00000011
 Message: [1, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 === PQ Aggregation Test Completed ===
+=== PQ Aggregation Test Started ===
+Turned sig_1 to acc00, 0.407742334 seconds
+Turned sig_2 to acc01, 0.414987375 seconds
+Merged acc00 + acc01 = acc10, 0.507684166 seconds
+Verified the final accumulator, acc10 in 0.001210833 seconds
+=== PQ Aggregation Test Results ===
+Number of Voters: 32, Merging 8 proofs
+Estimated time to aggregate all signatures: 
+ >>>> 1.25750513 seconds (warning: fp error)
+Proof size: 0 bytes
+Bitfield: 0b00000011
+Message: [1, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+=== PQ Aggregation Test Completed ===
+=== PQ Aggregation Test Started ===
+Turned sig_1 to acc00, 537.528463625 seconds
+=== PQ Aggregation Test Started ===
+=== PQ Aggregation Test Started ===
+Turned sig_1 to acc00, 494.983384667 seconds
+Turned sig_2 to acc01, 497.690940541 seconds
+Merged acc00 + acc01 = acc10, 509.09625175 seconds
+Verified the final accumulator, acc10 in 0.39433875 seconds
+=== PQ Aggregation Test Results ===
+Number of Voters: 31, Merging 8 proofs
+Estimated time to aggregate all signatures: 
+ >>>> 1175.132164937 seconds (warning: fp error)
+Proof size: 6829596 bytes
+Bitfield: 0b00000011
+Message: [1, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+=== PQ Aggregation Test Completed ===
+=== PQ Aggregation Test Started ===
+Turned sig_1 to acc00, 0.367230333 seconds
+Turned sig_2 to acc01, 0.420823959 seconds
+Merged acc00 + acc01 = acc10, 0.512921959 seconds
+Verified the final accumulator, acc10 in 0.001196875 seconds
+=== PQ Aggregation Test Results ===
+Number of Voters: 31, Merging 2 proofs
+Estimated time to aggregate all signatures: 
+ >>>> 2.445714982 seconds (warning: fp error)
+Proof size: 0 bytes
+Bitfield: 0b00000011
+Message: [1, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+=== PQ Aggregation Test Completed ===
+=== PQ Aggregation Test Started ===
+Turned sig_1 to acc00, 407.187408084 seconds
+=== PQ Aggregation Test Started ===
+=== PQ Aggregation Test Started ===
+Turned sig_1 to acc00, 500.231936917 seconds

@@ -55,7 +55,7 @@ pub fn main() {
 
     // Define some parameters and constants
     let mut rng = thread_rng();
-    let epoch: u32 = 10;
+    let epoch: u32 = 2;
     let image_id: [u32; 8] = PQ_AGGREGATION_GUEST_2_ID;
     let message: [u8; 32] = {
         let mut arr: [u8; 32] = [0u8; 32]; // Initialize an array of size 32 with all zeros
@@ -185,7 +185,7 @@ pub fn main() {
 
     log_message(&mut log_file, "=== PQ Aggregation Test Results ===");
     let no_agg_signatures = NUM_VOTERS;
-    let merging_proofs: i32 = 8; // <<<< CHANGE THIS AS WELL
+    let merging_proofs: i32 = 2; // <<<< CHANGE THIS AS WELL
     let aggregation_time = (duration_sig_to_proof1 + duration_sig_to_proof2) / 2
         + duration_merge_proofs * no_agg_signatures.ilog2() / merging_proofs.ilog2();
     log_message(

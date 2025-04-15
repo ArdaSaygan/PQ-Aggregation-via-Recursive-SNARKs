@@ -55,7 +55,7 @@ pub fn main() {
 
     // Define some parameters and constants
     let mut rng = thread_rng();
-    let epoch: u32 = 10;
+    let epoch: u32 = 2;
     let image_id: [u32; 8] = PQ_AGGREGATION_GUEST_4_ID;
     let message: [u8; 32] = {
         let mut arr: [u8; 32] = [0u8; 32]; // Initialize an array of size 32 with all zeros

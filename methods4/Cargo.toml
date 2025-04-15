@@ -5,6 +5,7 @@ edition = "2021"
 
 [build-dependencies]
 risc0-build = {version = "1.2.5", features=["unstable"]}
+tiny-keccak = { version = "2.0", features = ["sha3"] }
 
 [package.metadata.risc0]
 methods = ["guest"]

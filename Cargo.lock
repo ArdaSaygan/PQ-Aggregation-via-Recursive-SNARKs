@@ -601,6 +601,12 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d0a5c400df2834b80a4c3327b3aad3a4c4cd4de0629063962b03235697506a28"
 
 [[package]]
+name = "crunchy"
+version = "0.2.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "43da5946c66ffcc7745f48db692ffbb10a83bfe0afd96235c5c2a4fb23994929"
+
+[[package]]
 name = "crypto-bigint"
 version = "0.5.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1148,13 +1154,13 @@ checksum = "bf151400ff0baff5465007dd2f3e717f3fe502074ca563069ce3a6629d07b289"
 [[package]]
 name = "hashsig"
 version = "0.1.0"
-source = "git+https://github.com/ArdaSaygan/hash-sig-serde.git#4a80f8d3c333d32f781f895e2cb7b1ef2a53d5a6"
+source = "git+https://github.com/ArdaSaygan/hash-sig-serde.git#bc95fbcbd1c95b7b0711dc576a157b106d5ab847"
 dependencies = [
  "num-bigint 0.4.6",
  "rand 0.8.5",
  "rayon",
  "serde",
- "sha3",
+ "tiny-keccak",
 ]
 
 [[package]]
@@ -1949,6 +1955,7 @@ name = "pq-aggregation-methods_2"
 version = "0.1.0"
 dependencies = [
  "risc0-build",
+ "tiny-keccak",
 ]
 
 [[package]]
@@ -1956,6 +1963,7 @@ name = "pq-aggregation-methods_4"
 version = "0.1.0"
 dependencies = [
  "risc0-build",
+ "tiny-keccak",
 ]
 
 [[package]]
@@ -1963,6 +1971,7 @@ name = "pq-aggregation-methods_8"
 version = "0.1.0"
 dependencies = [
  "risc0-build",
+ "tiny-keccak",
 ]
 
 [[package]]
@@ -1972,7 +1981,7 @@ dependencies = [
  "hashsig",
  "merkle_light",
  "serde",
- "sha3",
+ "tiny-keccak",
 ]
 
 [[package]]
@@ -2859,16 +2868,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "sha3"
-version = "0.10.8"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "75872d278a8f37ef87fa0ddbda7802605cb18344497949862c0d4dcb291eba60"
-dependencies = [
- "digest",
- "keccak",
-]
-
-[[package]]
 name = "sharded-slab"
 version = "0.1.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3061,6 +3060,14 @@ checksum = "8b9ef9bad013ada3808854ceac7b46812a6465ba368859a37e2100283d2d719c"
 dependencies = [
  "cfg-if",
  "once_cell",
+]
+
+[[package]]
+name = "tiny-keccak"
+version = "2.0.2"
+source = "git+https://github.com/risc0/tiny-keccak?tag=tiny-keccak%2Fv2.0.2-risczero.0#8fcc866dc94dcec3e79c3b2bc8fbc51b22f2d5e1"
+dependencies = [
+ "crunchy",
 ]
 
 [[package]]
@@ -3979,8 +3986,3 @@ dependencies = [
  "once_cell",
  "simd-adler32",
 ]
-
-[[patch.unused]]
-name = "tiny-keccak"
-version = "2.0.2"
-source = "git+https://github.com/risc0/tiny-keccak?tag=tiny-keccak%2Fv2.0.2-risczero.0#8fcc866dc94dcec3e79c3b2bc8fbc51b22f2d5e1"

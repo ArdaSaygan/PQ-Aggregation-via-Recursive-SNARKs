@@ -58,7 +58,7 @@ fn main() {
         let merkle_proof = merkle_proof.unwrap();
 
         // i==0  means no new signature is added
-        let sig_valid = SigScheme::verify(&pk, 10, &message, &sig);
+        let sig_valid = SigScheme::verify(&pk, 2, &message, &sig);
         if !(sig_valid) {
             panic!("Invalid (signature, public key, message)");
         }
