@@ -651,7 +651,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "pq-aggregation-guest"
+name = "pq-aggregation-guest_8"
 version = "0.1.0"
 dependencies = [
  "hashsig",

@@ -4,7 +4,9 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-pq-aggregation-methods = { path = "methods" }
+pq-aggregation-methods_2 = { path = "methods2" }
+pq-aggregation-methods_4 = { path = "methods4" }
+pq-aggregation-methods_8 = { path = "methods8" }
 risc0-zkvm = { version = "1.2.5", features=["unstable"]}
 tracing-subscriber = { version = "0.3", features = ["env-filter"] }
 hashsig = { git = "https://github.com/ArdaSaygan/hash-sig-serde.git"}
