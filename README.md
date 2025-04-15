@@ -10,7 +10,7 @@ Install Rust, cargo and risc0 by following the instructions [here](https://githu
 #### Benchmarks
 To run the test
 ```zsh
-NUM_VOTERS=<NUM_VOTERS> cargo run --release --bin merge<N>
+NUM_VOTERS=<NUM_VOTERS> cargo run --release --bin merge<N> <output_file_dir>
 ```
 where N can be 2,4 or 8.
 
