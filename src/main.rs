@@ -1,7 +1,8 @@
+use pq_data_types::NUM_VOTERS;
 use hashsig::signature::SignatureScheme;
 use pq_aggregation_methods::PQ_AGGREGATION_GUEST_ID;
 use pq_data_types::SigScheme;
-use pq_data_types::{Bitfield, PublicKeyList, NUM_VOTERS};
+use pq_data_types::{Bitfield, PublicKeyList};
 use rand::thread_rng;
 use std::env;
 use std::fs::OpenOptions;
@@ -184,7 +185,7 @@ pub fn main() {
     );
 
     log_message(&mut log_file, "=== PQ Aggregation Test Results ===");
-    let no_agg_signatures = NUM_VOTERS * 8;
+    let no_agg_signatures = NUM_VOTERS;
     let merging_proofs: i32 = 4; // <<<< CHANGE THIS AS WELL
     let aggregation_time = (duration_sig_to_proof1 + duration_sig_to_proof2) / 2
         + duration_merge_proofs * no_agg_signatures.ilog2() / merging_proofs.ilog2();
@@ -192,7 +193,7 @@ pub fn main() {
         &mut log_file,
         &format!(
             "Number of Voters: {}, Merging {} proofs",
-            NUM_VOTERS * 8,
+            NUM_VOTERS ,
             merging_proofs
         ),
     );

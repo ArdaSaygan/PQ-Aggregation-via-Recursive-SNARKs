@@ -30,3 +30,4 @@ Bitfield: 0b00000011
 Message: [1, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 === PQ Aggregation Test Completed ===
 === PQ Aggregation Test Started ===
+=== PQ Aggregation Test Started ===

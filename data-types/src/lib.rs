@@ -1,3 +1,5 @@
+include!(concat!(env!("OUT_DIR"), "/num_voters.rs"));
+
 use merkle_light::{hash::Algorithm, merkle::MerkleTree, proof::Proof};
 use serde::{Deserialize, Serialize};
 use sha3::Digest;
@@ -31,7 +33,8 @@ pub type PublicKey = GeneralizedXMSSPublicKey<TH>;
 
 pub type MerkleProof = merkle_light::proof::Proof<[u8; 32]>;
 
-pub const NUM_VOTERS: usize = 32; // in bytes,
+pub const NUM_VOTERS_BYTES: usize = NUM_VOTERS/8 + 1;
+
 #[derive(Clone)]
 pub struct PublicKeyList {
     keys: Vec<Option<PublicKey>>,
@@ -129,7 +132,7 @@ impl PublicKeyHasher for PublicKey {
 pub struct Bitfield(pub Vec<u8>);
 impl Bitfield {
     pub fn new() -> Self {
-        Bitfield(vec![0; NUM_VOTERS])
+        Bitfield(vec![0; NUM_VOTERS_BYTES])
     }
 
     /// Sets the ith bit to 1
@@ -137,7 +140,7 @@ impl Bitfield {
         let byte_index = i / 8;
         let bit_index = i % 8;
 
-        if byte_index < NUM_VOTERS {
+        if byte_index < NUM_VOTERS_BYTES {
             self.0[byte_index] |= 1 << bit_index;
         }
     }
@@ -146,7 +149,7 @@ impl BitOr for Bitfield {
     type Output = Self;
     fn bitor(self, rhs: Self) -> Self::Output {
         let mut result = self;
-        for i in 0..NUM_VOTERS {
+        for i in 0..NUM_VOTERS_BYTES {
             result.0[i] |= rhs.0[i];
         }
         result
