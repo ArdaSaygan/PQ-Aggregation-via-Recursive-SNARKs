@@ -1,0 +1,17 @@
+[package]
+name = "pq-data-types"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+hashsig = { git = "https://github.com/ArdaSaygan/hash-sig-serde.git"}
+serde = "1.0.0"
+merkle_light = {git = "https://github.com/ArdaSaygan/merkle_light_serde.git"}
+sha3 = "0.10.6"
+[dev-dependencies]
+
+
+[features]
+
+[patch.crates-io]
+tiny-keccak = { git = "https://github.com/risc0/tiny-keccak", tag = "tiny-keccak/v2.0.2-risczero.0" }

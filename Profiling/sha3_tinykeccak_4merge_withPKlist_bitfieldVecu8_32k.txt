@@ -1,0 +1,12 @@
+=== PQ Aggregation Test Started ===
+Generated 10 key pairs, each 3.9277587499999997 seconds
+pk1-7 signed the message, each 0.000194625 seconds
+Turned sig_1 to acc00, 254.920907292 seconds
+Turned sig_2 to acc01, 250.313850083 seconds
+Merged acc00 + acc01 + acc00 + acc01 = acc10, 193.579142375 seconds
+Verified the final accumulator, acc10 in 0.449427708 seconds
+Size of acc10: 408 bytes
+Size of Bitfield: 0 bytes
+Bitfield: 0b00000011
+Message: [1, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+=== PQ Aggregation Test Completed ===

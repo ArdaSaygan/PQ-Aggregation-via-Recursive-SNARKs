@@ -1,0 +1,78 @@
+=== PQ Aggregation Test Started ===
+Turned sig_1 to acc00, 251.274219834 seconds
+Turned sig_2 to acc01, 248.213113416 seconds
+Merged acc00 + acc01 + acc00 + acc01 = acc10, 174.895978625 seconds
+Verified the final accumulator, acc10 in 0.42250675 seconds
+=== PQ Aggregation Test Results ===
+Number of Voters: 32768, Merging 4 proofs
+Estimated time to aggregate all signatures: 
+ >>>> 1561.463506312 seconds (warning: fp error)
+Proof size: 7553744 bytes
+Bitfield: 0b00000011
+Message: [1, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+=== PQ Aggregation Test Completed ===
+=== PQ Aggregation Test Started ===
+Turned sig_1 to acc00, 218.446569708 seconds
+Turned sig_2 to acc01, 232.972896958 seconds
+Merged acc00 + acc01 = acc10, 85.821363375 seconds
+Verified the final accumulator, acc10 in 0.185998 seconds
+=== PQ Aggregation Test Results ===
+Number of Voters: 32768, Merging 2 proofs
+Estimated time to aggregate all signatures: 
+ >>>> 1513.030183958 seconds (warning: fp error)
+Proof size: 3230448 bytes
+Bitfield: 0b00000011
+Message: [1, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+=== PQ Aggregation Test Completed ===
+=== PQ Aggregation Test Started ===
+Turned sig_1 to acc00, 190.793840792 seconds
+Turned sig_2 to acc01, 194.114115208 seconds
+Merged acc00 + acc01 = acc10, 39.063566292 seconds
+Verified the final accumulator, acc10 in 0.138068584 seconds
+=== PQ Aggregation Test Results ===
+Number of Voters: 8192, Merging 2 proofs
+Estimated time to aggregate all signatures: 
+ >>>> 700.280339796 seconds (warning: fp error)
+Proof size: 2404188 bytes
+Bitfield: 0b00000011
+Message: [1, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+=== PQ Aggregation Test Completed ===
+=== PQ Aggregation Test Started ===
+Turned sig_1 to acc00, 289.981883583 seconds
+Turned sig_2 to acc01, 273.956700416 seconds
+Merged acc00 + acc01 = acc10, 164.905814625 seconds
+Verified the final accumulator, acc10 in 0.249671458 seconds
+=== PQ Aggregation Test Results ===
+Number of Voters: 65536, Merging 2 proofs
+Estimated time to aggregate all signatures: 
+ >>>> 2920.462325999 seconds (warning: fp error)
+Proof size: 4363040 bytes
+Bitfield: 0b00000011
+Message: [1, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+=== PQ Aggregation Test Completed ===
+=== PQ Aggregation Test Started ===
+Turned sig_1 to acc00, 191.193924 seconds
+Turned sig_2 to acc01, 195.975982792 seconds
+Merged acc00 + acc01 + acc00 + acc01 = acc10, 43.845749792 seconds
+Verified the final accumulator, acc10 in 0.297896792 seconds
+=== PQ Aggregation Test Results ===
+Number of Voters: 8192, Merging 4 proofs
+Estimated time to aggregate all signatures: 
+ >>>> 478.582327044 seconds (warning: fp error)
+Proof size: 5256496 bytes
+Bitfield: 0b00000011
+Message: [1, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+=== PQ Aggregation Test Completed ===
+=== PQ Aggregation Test Started ===
+Turned sig_1 to acc00, 340.110605166 seconds
+Turned sig_2 to acc01, 324.820311292 seconds
+Merged acc00 + acc01 + acc00 + acc01 = acc10, 342.634745334 seconds
+Verified the final accumulator, acc10 in 0.614346667 seconds
+=== PQ Aggregation Test Results ===
+Number of Voters: 65536, Merging 4 proofs
+Estimated time to aggregate all signatures: 
+ >>>> 3073.543420901 seconds (warning: fp error)
+Proof size: 10826208 bytes
+Bitfield: 0b00000011
+Message: [1, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+=== PQ Aggregation Test Completed ===

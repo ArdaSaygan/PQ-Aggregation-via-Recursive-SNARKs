@@ -1,0 +1,34 @@
+=== PQ Aggregation Test Started ===
+Generated 10 key pairs, each 3.954476417 seconds
+pk1-7 signed the message, each 0.000167167 seconds
+Turned sig_1 to acc00, 286.05396725 seconds
+Turned sig_2 to acc01, 266.022583584 seconds
+=== PQ Aggregation Test Started ===
+Generated 10 key pairs, each 3.974735083 seconds
+pk1-7 signed the message, each 0.000164166 seconds
+Turned sig_1 to acc00, 266.210827292 seconds
+Turned sig_2 to acc01, 249.6456355 seconds
+Merged acc00 + acc01 + acc00 + acc01 = acc10, 152.3092985 seconds
+Verified the final accumulator, acc10 in 0.462452 seconds
+Size of acc10: 408 bytes
+Size of Bitfield: 0 bytes
+Bitfield: 0b00000011
+Message: [1, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+=== PQ Aggregation Test Completed ===
+=== PQ Aggregation Test Started ===
+Generated 10 key pairs, each 3.870670459 seconds
+pk1-7 signed the message, each 0.000199917 seconds
+Turned sig_1 to acc00, 251.584620083 seconds
+Turned sig_2 to acc01, 287.498543708 seconds
+Merged acc00 + acc01 + acc00 + acc01 = acc10, 162.795318708 seconds
+Verified the final accumulator, acc10 in 0.465238125 seconds
+=== PQ Aggregation Test Results ===
+Number of Voters: 32768, Merging 4 proofs
+Time to aggregate all signatures: 
+ >>>> 1490.506472205 seconds (warning: fp error)
+--- Sizes (Not Accurate)---
+Size of acc10: 408 bytes
+Size of Bitfield: 0 bytes
+Bitfield: 0b00000011
+Message: [1, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+=== PQ Aggregation Test Completed ===

@@ -1,0 +1,25 @@
+[package]
+name = "pq-aggregation"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+pq-aggregation-methods = { path = "methods" }
+risc0-zkvm = { version = "1.2.5", features=["unstable"]}
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+hashsig = { git = "https://github.com/ArdaSaygan/hash-sig-serde.git"}
+
+rand = "0.8.5"
+serde = "1.0.0"
+pq-data-types = {path = "data-types"}
+risc0-zkp = "1.2.5"
+
+[features]
+cuda = ["risc0-zkvm/cuda"]
+default = []
+prove = ["risc0-zkvm/prove"]
+
+
+[patch.crates-io]
+sha2 = { git = "https://github.com/risc0/RustCrypto-hashes", tag = "sha2-v0.10.8" }
+tiny-keccak = { git = "https://github.com/risc0/tiny-keccak", tag = "tiny-keccak/v2.0.2-risczero.0" }

@@ -1,0 +1,32 @@
+=== PQ Aggregation Test Started ===
+=== PQ Aggregation Test Started ===
+=== PQ Aggregation Test Started ===
+=== PQ Aggregation Test Started ===
+=== PQ Aggregation Test Started ===
+=== PQ Aggregation Test Started ===
+Turned sig_1 to acc00, 0.411765791 seconds
+Turned sig_2 to acc01, 0.398434167 seconds
+Merged acc00 + acc01 + acc00 + acc01 = acc10, 0.093219625 seconds
+Verified the final accumulator, acc10 in 0.0011715 seconds
+=== PQ Aggregation Test Results ===
+Number of Voters: 256, Merging 4 proofs
+Estimated time to aggregate all signatures: 
+ >>>> 0.777978479 seconds (warning: fp error)
+Proof size: 0 bytes
+Bitfield: 0b00000011
+Message: [1, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+=== PQ Aggregation Test Completed ===
+=== PQ Aggregation Test Started ===
+Turned sig_1 to acc00, 0.360114208 seconds
+Turned sig_2 to acc01, 0.328836125 seconds
+Merged acc00 + acc01 + acc00 + acc01 = acc10, 0.091214875 seconds
+Verified the final accumulator, acc10 in 0.0011645 seconds
+=== PQ Aggregation Test Results ===
+Number of Voters: 256, Merging 4 proofs
+Estimated time to aggregate all signatures: 
+ >>>> 0.709334666 seconds (warning: fp error)
+Proof size: 0 bytes
+Bitfield: 0b00000011
+Message: [1, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+=== PQ Aggregation Test Completed ===
+=== PQ Aggregation Test Started ===
