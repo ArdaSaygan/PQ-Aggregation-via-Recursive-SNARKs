@@ -105,7 +105,6 @@ impl PublicKeyList {
     }
 
     // verify a merkle inclusion proof
-    // TODO: add a check for the public key
     pub fn verify(merkle_root: &[u8; 32], proof: &Proof<[u8; 32]>, pk: &PublicKey) -> bool {
         let mut a = Alg::default();
         let leaf = a.leaf(pk.hash_256());

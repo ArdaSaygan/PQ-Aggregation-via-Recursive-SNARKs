@@ -1,0 +1,13 @@
+=== PQ Aggregation Test Started ===
+Turned sig_1 to acc00, 553.53441875 seconds
+Turned sig_2 to acc01, 473.763140042 seconds
+Merged acc00 + acc01 + acc00 + acc01 = acc10, 13.473694 seconds
+Verified the final accumulator, acc10 in 0.776382958 seconds
+=== PQ Aggregation Test Results ===
+Number of Voters: 512, Merging 4 proofs
+Estimated time to aggregate all signatures: 
+ >>>> 574.280402396 seconds (warning: fp error)
+Proof size: 13897044 bytes
+Bitfield: 0b00000011
+Message: [1, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+=== PQ Aggregation Test Completed ===
