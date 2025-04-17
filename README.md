@@ -33,14 +33,7 @@ NUM_VOTERS=<NUM_VOTERS> cargo run --release --bin merge<N> <output_file_path>
 - `<N>`: Number of partial proofs to merge (supported values: **2**, **4**, **8**)  
 - `<output_file_path>`: Path to save benchmark output (e.g., `Benchmark/merge<N>_sig<NUM_VOTERS>`)
 
----
 
-## Repository Structure
-
-- `src/` — Core implementation  
-- `methods/` — RISC0 zkVM guest code  
-- `Benchmark/` — Output directory for benchmark results  
-- `Cargo.toml` — Rust project configuration
 
 
 
