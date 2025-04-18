@@ -33,6 +33,20 @@ NUM_VOTERS=<NUM_VOTERS> cargo run --release --bin merge<N> <output_file_path>
 - `<N>`: Number of partial proofs to merge (supported values: **2**, **4**, **8**)  
 - `<output_file_path>`: Path to save benchmark output (e.g., `Benchmark/merge<N>_sig<NUM_VOTERS>`)
 
+To create profiling
+
+```zsh
+ISC0_PPROF_OUT=./<profiling_file>.pb RUST_LOG=info RISC0_INFO=1 cargo run --release --bin merge<N> <output_file_path>
+```
+
+To view profiling
+
+```zsh
+go tool pprof -http=127.0.0.1:8000 <profiling_file>.pb
+```
+
+
+
 
 
 
