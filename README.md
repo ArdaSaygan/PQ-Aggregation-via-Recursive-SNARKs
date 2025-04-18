@@ -4,8 +4,6 @@
 
 > ⚠️ **Warning:** This is a research prototype. It has **not** been audited and may contain bugs or security vulnerabilities. **Do not use in production environments.**
 
-This repository contains the implementation of an ongoing research project conducted at **TÜBİTAK National Research Institute of Electronics and Cryptology**. The project explores **post-quantum signature aggregation using recursive SNARKs**.
-
 ---
 
 ## Getting Started
